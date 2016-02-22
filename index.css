@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'opensans';
+  src: url('OpenSans-Regular.ttf') format('truetype');
+}
+
+body {
+  font-family: 'opensans', sans-serif;
+}
 #wrapper {
   width: 960px;
   margin: 0 auto;
@@ -27,7 +35,8 @@
 
 #nav li {
   display: inline-block;
-  margin: 10px 13px;
+  /*margin: 10px 13px;*/
+  padding: 10px 10px;
 }
 
 #nav-logo {
@@ -65,6 +74,7 @@
   margin: 20px 20px 0px 0px;
 }
 
+#selection ul li
 #single-line {
   border-top: 1px solid #BBBBBB;
 }
@@ -103,7 +113,7 @@ hr {
 
 #discover {
   display: flex;
-  width: 300px;
+  width: 320px;
 }
 
 #discover-ul-1 li, #discover-ul-2 li{
@@ -121,20 +131,25 @@ hr {
   height: 0;
   border-style: solid;
   border-width: 5px 0 5px 10px;
-  border-color: transparent transparent transparent #007bff;
+  border-color: transparent transparent transparent rgb(182,182,182);
   display: inline-block;
+}
+
+#mobile{
+  margin-left: 10px;
+  color: rgb(198,68,55);
 }
 
 #new-video {
   display: flex;
-  width: 300px;
+  width: 320px;
   flex-direction: column;
 }
 
 .awesome-templates {
   display: flex;
-  width: 300px;
-  justify-content: flex-start;
+  width: 320px;
+  justify-content: space-between;;
   margin-top: 30px;
 }
 
@@ -149,28 +164,41 @@ hr {
 
 #email-bar {
   display: inline-flex;
+  align-items: center;
 }
 
 #email-bar-1 {
-  border-width: 3px 0 3px 3px;
+  border-width: 2px 0 2px 2px;
   border-style: solid;
-  border-color: #000000;
+  border-color: rgb(198,68,55);
   margin: 0;
+  padding: 8px;
+
+  height: 18px;
+  line-height: 18px;
 }
 
 #email-bar-2{
-  border-width: 3px 0 3px 0;
+  border-width: 2px 0 2px 0;
   border-style: solid;
-  border-color: #000000;
+  border-color: rgb(198,68,55);
   margin: 0;
+  height: 34px;
+  width: 194px;
+  line-height: 34px;
+  /*align-self: flex-end;*/
 }
 #email-bar-3 {
-  border-width: 3px 3px 3px 0;
+  border-width: 2px 2px 2px 0;
   border-style: solid;
-  border-color: #000000;
+  border-color: rgb(198,68,55);
   margin: 0;
   width: 34px;
   height: 34px;
+}
+
+#slide {
+  text-align: center;
 }
 
 #img-2014 {
